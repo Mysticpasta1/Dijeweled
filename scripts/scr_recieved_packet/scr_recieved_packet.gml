@@ -410,7 +410,7 @@ function scr_recieved_packet(argument0) {
 			if (global.SET_gamemode == 1) 
 			{
 				instance_create(0,0,spawner_avalanche)
-				instance_create(room_width/2,992,obj_avalanche_pass)
+				instance_create_depth(room_width/2,992,0,obj_avalanche_pass)
 				with(spawner_avalanche) event_user(1)
 			}
 			else
@@ -464,7 +464,7 @@ function scr_recieved_packet(argument0) {
 			break;
 		case NN_LBY_SEND_SETTINGS: //client getting info previously asked
 			LOB_ultranovas.enabled = buffer_read(buffer,buffer_bool)
-			LOB_ultranovas.image_index = LOB_multiswap.enabled
+			LOB_ultranovas.image_index = LOB_ultranovas.enabled
 			LOB_multiswap.enabled = buffer_read(buffer,buffer_bool)
 			LOB_multiswap.image_index = LOB_multiswap.enabled
 			LOB_hypercubes.enabled = buffer_read(buffer,buffer_bool)
@@ -596,6 +596,9 @@ function scr_recieved_packet(argument0) {
 			break;
 		case NN_MATCH_AVALANCHE_PASS:
 			audio_play_sound(snd_pass,0,false)
+			break;
+		case NN_AMREADY:
+			with(obj_online_getready) other_player_is_now_ready()
 			break;
 	}
 
