@@ -9,11 +9,14 @@ alarm[0] = 30
 image_speed = 0
 field = "127.0.0.1"
 field_converted = "127.0.0.1"
+x = 636
+y = 392
 
 function join() {
 	if field != ""
 	{
 		global.ip = field
+		global.mynet = obj_client
 		instance_create(x,y,obj_client)
 	}
 }

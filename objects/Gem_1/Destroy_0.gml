@@ -21,15 +21,12 @@ if !amInvisible //if I am visible
 		
 		if !MyGamerule.octanovaOn
 		{
-			with(global.mynet)
-			{
-				buffer_seek(buffer,buffer_seek_start,0)
-				buffer_write(buffer,buffer_u8,NN_MATCH_GEM_DEATH)
-				buffer_write(buffer,buffer_u8,other.myid)
-				buffer_write(buffer,buffer_bool,other.create_col)
-				if other.amHype buffer_write(buffer,buffer_u8,other.skin_to_hype)
-				network_send_packet(client_socket,buffer,buffer_tell(buffer))
+			if (amexplode) { //If blazing is on, make explosion vfx at me
+				network_send(NN_MATCH_AMEXPLODE, [buffer_u8], [myid])	
 			}
+			var hype_val = amHype ? skin_to_hype : 0
+			if amHype network_send(NN_MATCH_GEM_DEATH, [buffer_u8, buffer_bool, buffer_u8], [myid, create_col, hype_val])
+			else network_send(NN_MATCH_GEM_DEATH, [buffer_u8, buffer_bool], [myid, create_col])
 		}
 		MyGamerule.GEM_ID[myid] = -1		
 	}
@@ -346,8 +343,10 @@ if !amInvisible //if I am visible
 		var cube = instance_create(x,y,obj_hypercube_detonate)
 		cube.image_index = hyper_anim
 		cube.index = skin_to_hype
-		if (skin_to_hype != 8) cube.destroy_companions = gem_to_hype.amCompanion
-		cube.gem[0] = gem_to_hype
+		if instance_exists(gem_to_hype) {
+			if (skin_to_hype != 8) cube.destroy_companions = gem_to_hype.amCompanion
+			cube.gem[0] = gem_to_hype
+		}
 		#endregion
 	}
 	

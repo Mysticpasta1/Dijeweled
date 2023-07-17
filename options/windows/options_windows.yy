@@ -1,7 +1,10 @@
 {
-  "option_windows_display_name": "Dijeweled Remastered  (v1.13)",
+  "resourceType": "GMWindowsOptions",
+  "resourceVersion": "1.1",
+  "name": "Windows",
+  "option_windows_display_name": "Dijeweled Remastered  (v1.17)",
   "option_windows_executable_name": "${project_name}",
-  "option_windows_version": "1.1.3.0",
+  "option_windows_version": "1.1.7.0",
   "option_windows_company_info": "LDinos",
   "option_windows_product_info": "Dijeweled",
   "option_windows_copyright_info": "(c) 2018-2022 LDinos",
@@ -28,9 +31,4 @@
   "option_windows_enable_steam": false,
   "option_windows_disable_sandbox": true,
   "option_windows_steam_use_alternative_launcher": false,
-  "option_windows_use_x64": true,
-  "resourceVersion": "1.1",
-  "name": "Windows",
-  "tags": [],
-  "resourceType": "GMWindowsOptions",
 }

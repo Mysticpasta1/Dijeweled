@@ -30,9 +30,10 @@ if (levelbarfull)
 		part_particles_clear(global.sys_above_gem)
 		part_particles_clear(global.sys_below_gem)
 		level_complete_get_powers()
+		bar_be_full = true //make level bar be full until the board transitions in
 		spawnallowed = false
 		level++
-		discord_update_presence(global.DIS_name,"Level " + string(Gamerule_1.level),"ico_512","")
+		DISCORD np_setpresence("Level " + string(Gamerule_1.level), global.DIS_name, "ico_512", "")
 		#region secret
 		if (level == 10) //secret unlock
 		{
