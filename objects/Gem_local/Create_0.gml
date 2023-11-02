@@ -43,7 +43,6 @@ MyGamerule = Gamerule_local
 MyBoard = Board_local
 MyLightObj = lightningObj_local
 MyLightKiller = lightningkiller_local
-MyPlayer = player_local
 //else if room = rm_twist MyPlayer = obj_twist_spinner
 MyDiss = gem_dissappear_local
 #endregion

@@ -41,7 +41,7 @@ if w_count <= 7
 				{
 					gem_to_hype = id
 					skin_to_hype = other.skinnum
-					if instance_exists(player_local) {if (player_local.gem1 == id) player_local.gem1 = noone}
+					if instance_exists(Player_local) {if (Player_local.gem1 == id) Player_local.gem1 = noone}
 					instance_destroy()
 				}
 				else if gempower !=6

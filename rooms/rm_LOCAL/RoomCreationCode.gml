@@ -31,7 +31,7 @@ if global.SET_twist
 	instance_create(x,y,obj_twist_spinner)
 	instance_destroy(player1)
 	instance_create(x,y,obj_twist_spinner_local)
-	instance_destroy(player_local)
+	instance_destroy(Player_local)
 }
 
 var dic = "Online: Battle"

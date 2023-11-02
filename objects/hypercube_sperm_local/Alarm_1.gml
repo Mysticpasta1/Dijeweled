@@ -1,7 +1,7 @@
 audio_play_sound(snd_hype_gemexp,0,0)
 var p = 50
 var p2 = 20
-with(gem_index)
+with(global.gem_index)
 {
 	create_score_text(x,y,p,false,mycolor)
 	magnify(x,y,false)

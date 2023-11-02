@@ -1,6 +1,6 @@
 /// @description MATCH ANIM
 var modi = modifier
-if instance_exists(MyPlayer.gemtomove1) && instance_exists(MyPlayer.gemtomove2)
+if instance_exists(global.player1.gemtomove1) && instance_exists(player1.gemtomove2)
 {
 	//power(percent,2)
 	SWAP_X = ease_inout_sine(percent,0,SWAP_X_END,1)//round(lerp(0,SWAP_X_END,power(percent,2))) //- x
@@ -26,7 +26,7 @@ if instance_exists(MyPlayer.gemtomove1) && instance_exists(MyPlayer.gemtomove2)
 }
 else 
 {
-	instance_destroy(MyPlayer.gemtomove1)
-	instance_destroy(MyPlayer.gemtomove2)
+	instance_destroy(player1.gemtomove1)
+	instance_destroy(player1.gemtomove2)
 	with(MyPlayer) alarm[2] = 5
 }
