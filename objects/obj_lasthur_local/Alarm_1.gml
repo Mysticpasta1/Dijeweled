@@ -9,12 +9,12 @@ if j = 8
 if i != 8
 {
 	fastness = 1
-	if instance_exists(Gamerule_local)
+	if instance_exists(Gamerule_local.gem_board1[i,j])
 	{
 		if Gamerule_local.gem_board1[i,j].amHype = true 
 		{
 			fastness = 5;
-			with(Gamerule_local) {skin_to_hype = irandom(Gamerule_local.num_skin)}
+			with(Gamerule_local.gem_board1[i,j]) {skin_to_hype = irandom(Gamerule_local.num_skin)}
 			instance_destroy(Gamerule_local.gem_board1[i,j])
 		}
 		else if Gamerule_local.gem_board1[i,j].gempower > 0 {fastness = 5; instance_destroy(Gamerule_local.gem_board1[i,j])}

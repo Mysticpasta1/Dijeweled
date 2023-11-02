@@ -212,7 +212,7 @@ if !out_of_bounds
 				}
 				for(i=0;i<ds_list_size(list_of_skulls);i++)
 				{
-					with(list_of_skulls[i])
+					with(list_of_skulls[| i])
 					{
 						countdown_decrease()
 					}

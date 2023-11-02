@@ -8,5 +8,3 @@ alpha = 1
 percent = 0
 image_xscale = 0.6
 image_yscale = 0.6
-xx=xstart
-yy=ystart

@@ -9,7 +9,7 @@ if j = 8
 if i != 8
 {
 	fastness = 1
-	if instance_exists(Gamerule_1)
+	if instance_exists(Gamerule_1.gem_board1[i,j])
 	{
 		if Gamerule_1.gem_board1[i,j].amHype = true 
 		{

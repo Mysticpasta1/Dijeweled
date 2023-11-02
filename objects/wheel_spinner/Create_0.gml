@@ -7,7 +7,6 @@ rottoend = 0
 audio_play_sound(bombalarm,0,0)
 ended = false
 k = 1
-yy=ystart
 audio_play_sound(siren,0,1)
 maxacc = 8 //max accelleration
 alreadydone = false

@@ -9,8 +9,8 @@
 		check_for_xplier = true //check for multiplier increase/decrease on this move (gets to false after matcher_stepevent)
 		increase_xplier = false //as default, lets say we did an illegal move (decrease xplier)
 	}
-	with(global.gemtomove1) {check_ifmatch(other.MyGamerule)}
-	with(global.gemtomove2) {check_ifmatch(other.MyGamerule)}
+	with(gemtomove1) {check_ifmatch(other.MyGamerule)}
+	with(gemtomove2) {check_ifmatch(other.MyGamerule)}
 	
 	if flag
 	{

@@ -7,7 +7,7 @@ if !amInvisible //if I am visible
 	
 	with(obj_avalanchedeposit_local) event_user(0)
 	#region remove gem if selected
-		with(Player_local)
+		with(MyPlayer)
 		{
 			if (gem1 = other.id) gem1 = noone //delete list of gems in player when this is included
 			if (gem2 = other.id) gem2 = noone //delete list of gems in player when this is included

@@ -1,11 +1,12 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "discord_update_presence",
-  "isCompatibility": false,
   "isDnD": false,
+  "isCompatibility": false,
   "parent": {
     "name": "Discord",
     "path": "folders/Scripts/Discord.yy",
   },
+  "resourceVersion": "1.0",
+  "name": "discord_update_presence",
+  "tags": [],
+  "resourceType": "GMScript",
 }

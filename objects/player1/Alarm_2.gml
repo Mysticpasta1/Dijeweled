@@ -9,7 +9,7 @@
 		check_for_xplier = true //check for multiplier increase/decrease on this move (gets to false after matcher_stepevent)
 		increase_xplier = false //as default, lets say we did an illegal move (decrease xplier)
 	}
-	with(global.gemtomove1) {check_ifmatch(Gamerule_1)}
+	with(gemtomove1) {check_ifmatch(Gamerule_1)}
 	with(gemtomove2) {check_ifmatch(Gamerule_1)}
 	
 	if flag
@@ -85,7 +85,7 @@
 		with(obj_bonus_challenge) bonus_set_index(0)
 		//Gamerule_1.blazingspeedchain = 0
 		//Gamerule_1.blazingcounter = 140
-		if instance_exists(gemtomove1) && instance_exists(global.gemtomove2)
+		if instance_exists(gemtomove1) && instance_exists(gemtomove2)
 		{
 			temp = gemtomove1
 			gemtomove1 = gemtomove2

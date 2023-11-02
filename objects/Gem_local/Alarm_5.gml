@@ -20,13 +20,13 @@ if instance_exists(MyPlayer.gemtomove1) && instance_exists(MyPlayer.gemtomove2)
 		SWAP_Y = 0
 		SWAP_X_END = 0
 		SWAP_Y_END = 0
-		if (!isturnback) {with(Player_local) alarm[2] = 5}
-		else {alarm[2] = 5;MyGamerule.moving = false; with(Player_local) alarm[7] = 3}
+		if (!isturnback) {with(MyPlayer) alarm[2] = 5}
+		else {alarm[2] = 5;MyGamerule.moving = false; with(MyPlayer) alarm[7] = 3}
 	}
 }
 else 
 {
-	instance_destroy(Player_local.gemtomove1)
-	instance_destroy(Player_local.gemtomove2)
-	with(Player_local) alarm[2] = 5
+	instance_destroy(MyPlayer.gemtomove1)
+	instance_destroy(MyPlayer.gemtomove2)
+	with(MyPlayer) alarm[2] = 5
 }
