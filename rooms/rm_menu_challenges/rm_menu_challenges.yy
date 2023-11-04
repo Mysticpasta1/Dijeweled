@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_menu_challenges",
-  "creationCodeFile": "rooms/rm_menu_challenges/RoomCreationCode.gml",
+  "creationCodeFile": "RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

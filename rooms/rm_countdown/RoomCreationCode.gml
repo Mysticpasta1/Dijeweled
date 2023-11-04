@@ -4,6 +4,7 @@ obj_radio.loop = true
 
 draw_texture_flush()
 //RADIO\\
+discord_update_presence(global.DIS_name,"","ico_512","")
 with(obj_levelbar)
 {
 	global.timer = 300

@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_swift",
-  "creationCodeFile": "rooms/rm_swift/RoomCreationCode.gml",
+  "creationCodeFile": "RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

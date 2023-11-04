@@ -4,7 +4,7 @@ function explode(argument0) {
 	if (argument0 == Gem_1) gmrl = Gamerule_1
 	else if (argument0 == Gem_local) gmrl = Gamerule_local
 	//\\
-	//magnify(x,y,true)
+	magnify(x,y,true)
 	var modi = 1
 	var stle = 0
 	if Gamerule_1.isReplay modi = 1.5

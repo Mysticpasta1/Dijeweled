@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_countdown",
-  "creationCodeFile": "rooms/rm_countdown/RoomCreationCode.gml",
+  "creationCodeFile": "RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

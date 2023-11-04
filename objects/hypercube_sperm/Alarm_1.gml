@@ -4,7 +4,7 @@ var p2 = 20
 with(gem_index)
 {
 	create_score_text(x,y,p,false,mycolor)
-	//magnify(x,y,false)
+	magnify(x,y,false)
 	make_inv_dis = true
 	create_col = false
 	part_particles_create_colour(global.sys_above_gem,x,y,global.gemsmoketype,mycolor,8)

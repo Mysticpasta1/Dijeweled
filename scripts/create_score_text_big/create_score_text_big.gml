@@ -3,7 +3,7 @@
 ///@param points
 ///@param allow_combo_multiplier
 function create_score_text_big(argument0, argument1, argument2, argument3) {
-	if Gamerule_1.points_allowed && Gamerule_1.points_text_allowed
+	if Gamerule_1.points_allowed && global.ShowScore && Gamerule_1.points_text_allowed
 	{
 		var multiplier = Gamerule_1.xplier
 		var cascade_num = Gamerule_1.combo

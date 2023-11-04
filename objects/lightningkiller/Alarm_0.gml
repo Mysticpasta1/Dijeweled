@@ -36,7 +36,7 @@ if w_count <= 7
         {
             if amLit && !amInvisible
             {
-				//magnify(x,y,false)
+				magnify(x,y,false)
 				if amHype
 				{
 					gem_to_hype = id

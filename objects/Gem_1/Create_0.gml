@@ -44,7 +44,6 @@ MyBoard = Board_1
 MyLightObj = lightningObj1
 MyLightKiller = lightningkiller
 MyDiagonalLight = obj_diagonal_lighting
-global.OPT_lightallowed = true;
 MyPlayer = player1
 if (room == rm_blitz_matchreplay) MyPlayer = player1_matchreplay
 //else if room = rm_twist MyPlayer = obj_twist_spinner

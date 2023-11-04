@@ -1,4 +1,5 @@
 room_speed = 60
+discord_update_presence(global.DIS_name,"Level " + string(Gamerule_1.level),"ico_512","")
 draw_texture_flush()
 //RADIO\\
 

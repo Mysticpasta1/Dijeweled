@@ -29,3 +29,4 @@ with(Gamerule_1)
 		if Gamerule_1.Moves_Made == 0 BombMax = 3 //Max amount of bombs on screen
 		BombExaggerate = -1
 	}
+discord_update_presence(global.DIS_name,"Moves: " + string(Gamerule_1.Moves_Made),"ico_512","")
