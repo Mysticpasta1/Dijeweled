@@ -32,7 +32,6 @@ if (levelbarfull)
 		level_complete_get_powers()
 		spawnallowed = false
 		level++
-		discord_update_presence(global.DIS_name,"Level " + string(Gamerule_1.level),"ico_512","")
 		#region secret
 		if (level == 20) //secret unlock
 		{

@@ -6,7 +6,6 @@ Gamerule_1.multiswap_allowed = true
 Gamerule_1.blazingallowed = true
 Gamerule_1.isQuest = false
 Gamerule_1.geode_xplier = 5
-discord_update_presence(global.DIS_name,"Time set: " + convert_seconds_to_time(global.timer),"ico_512","")
 with(obj_levelbar)
 {
 	time_full = global.timer

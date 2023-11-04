@@ -1,5 +1,5 @@
 function destroy_bomb() {
-	magnify(x,y,false)
+	//magnify(x,y,false)
 	amBomb = false
 	xmover = 0
 	ymover = 0

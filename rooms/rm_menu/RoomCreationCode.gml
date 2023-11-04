@@ -9,7 +9,6 @@ global.replay_match_allowed = false
 global.replay_match_isplaying = false
 global.bot1 = false
 global.botdifficulty1 = 0
-if !instance_exists(OBJ_GRAPHICS) instance_create(x,y,OBJ_GRAPHICS)
 
 if !file_exists("challenges.ini")
 {
@@ -24,5 +23,3 @@ else
 		if ini_read_real("ver","value",0) != ver create_challenge_ini()
 	ini_close()
 }
-
-discord_update_presence("In Main Menu",global.version,"ico_512","")

@@ -1,4 +1,4 @@
-if ready && global.ShowScore
+if ready
 {
 //draw_set_alpha(0.7)
 draw_set_font(Typo_Grotesk)

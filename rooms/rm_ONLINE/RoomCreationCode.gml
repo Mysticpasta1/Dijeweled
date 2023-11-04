@@ -75,5 +75,3 @@ with(Gamerule_1)
 		force_moves_allowed = false
 	}
 }
-
-discord_update_presence(dic,"VS " + global.user2,"ico_512","")
