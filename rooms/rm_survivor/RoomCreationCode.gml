@@ -16,6 +16,13 @@ with(Gamerule_1)
 		if Gamerule_1.Moves_Made == 0 DoomCounterDefault = 8 //The value to give to the newly spawned Doom
 		if Gamerule_1.Moves_Made == 0 DoomCounter = DoomCounterDefault //The value to give to the newly spawned Doom
 	}
+	with(obj_skull_control)
+	{
+		SkullSpawnInstant = true
+		SkullCounterLevelBased = false
+		if Gamerule_1.Moves_Made == 0 SkullCounterDefault = 10 //The value to give to the newly spawned Doom
+		if Gamerule_1.Moves_Made == 0 SkullCounter = SkullCounterDefault //The value to give to the newly spawned Doom
+	}
 	with(obj_bombcontrol)
 	{
 		if Gamerule_1.Moves_Made == 0 TurnsToSpawnDefault = 8

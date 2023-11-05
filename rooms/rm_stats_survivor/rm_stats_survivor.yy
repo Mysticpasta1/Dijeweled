@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_stats_survivor",
-  "creationCodeFile": "${project_dir}/rooms/rm_stats_survivor/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/rm_stats_survivor/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
