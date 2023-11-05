@@ -17,7 +17,7 @@ global.replay_match_allowed = false
 global.replay_match_isplaying = false
 global.bot1 = false
 global.botdifficulty1 = 0
-if !instance_exists(OBJ_GRAPHICS) instance_create(x,y,OBJ_GRAPHICS)
+if !instance_exists(OBJ_GRAPHICS) instance_create(0,0,OBJ_GRAPHICS)
 
 if !file_exists("challenges.ini")
 {
