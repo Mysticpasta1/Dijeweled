@@ -6,7 +6,7 @@ image_xscale = lerp(0.1,5,power(func,2.5))
 image_yscale = image_xscale
 if func >= 1
 {
-	if !done
+	if !done && rm_zen != room
 	{
 		done = true
 		var leave = instance_create(0,0,obj_white_fade)

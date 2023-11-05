@@ -15,8 +15,8 @@ function destroy_bomb() {
 		shard.color = mycolor
 	}
 	with(obj_xplier) event_user(0) //fill in one gap
-	with(Gamerule_1) {points_add_nocombo(50); compliment_add(50)}
-	create_score_text(x,y+32,50,false,mycolor)
-
-
+	if(rm_zen != room) {
+		with(Gamerule_1) {points_add_nocombo(50); compliment_add(50)}
+		create_score_text(x,y+32,50,false,mycolor)
+	}
 }
