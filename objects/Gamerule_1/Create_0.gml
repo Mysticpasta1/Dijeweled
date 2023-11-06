@@ -8,7 +8,7 @@
 	vertical_swaps_only = false
 	inverted_swaps = false
 #endregion
-
+notmatching=false;
 should_move = true //gems should be able to move physically
 points_base_value = 25; //for classic mode, add plus base value for combos that are more than 1
 points_type = 1; //different way to get points in classic mode ( = 2)

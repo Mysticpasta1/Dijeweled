@@ -10,6 +10,10 @@ function points_add_nocombo(argument0) {
 		else {var value = argument0*xplier}
 		points += value
 	
+		if (points <= 0) {
+			points = 0	
+		}
+	
 		if global.online
 		{
 			if (!Gamerule_1.lightOn && !Gamerule_1.hypeOn)
@@ -19,8 +23,4 @@ function points_add_nocombo(argument0) {
 			}
 		}
 	}
-
-
-
-
 }

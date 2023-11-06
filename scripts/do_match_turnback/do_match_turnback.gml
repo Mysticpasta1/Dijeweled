@@ -2,6 +2,7 @@
 function do_match_turnback(argument0) {
 	// @param Gamerule
 	//Do the match animation (again but in reverse), and set that gamerule to gemactive0
+	
 	Gamerule_1.replay_illegals_allowed = false
 	if argument0 = Gamerule_1 myid = Gem_1
 	else if argument0 = Gamerule_local myid = Gem_local
@@ -33,7 +34,5 @@ function do_match_turnback(argument0) {
 	with(gemtomove1) {isturnback = true; ammoving = true; SWAP_X_END = other.gemtomove2.x - x; SWAP_Y_END = other.gemtomove2.y - y; alarm[5] = 1}
 	with(gemtomove2) {isturnback = true; ammoving = true; SWAP_X_END = other.gemtomove1.x - x; SWAP_Y_END = other.gemtomove1.y - y; alarm[5] = 1}
 	//alarm[3] = 1
-
-
-
+	Gamerule_1.notmatching=true
 }

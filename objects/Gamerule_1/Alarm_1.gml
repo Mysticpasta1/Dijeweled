@@ -36,8 +36,11 @@ if IsGemActive2
 			{
 				if !juststarted create_random_cube() //make a random cube, since the game MUSTN'T end and we are stuck
 			}
+		} else if !illegals_allowed && notmatching && (rm_classic == room || rm_zen == room) { 
+				var sc = -100
+				points_add_nocombo(sc)
+				notmatching = false
 		}
-		
 
 	}
 	illegal_cando = true

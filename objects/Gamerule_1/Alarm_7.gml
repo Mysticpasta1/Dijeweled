@@ -41,9 +41,9 @@ if bombis0 && !levelbarfull
 						controlallowed = true
 						spawnallowed = true
 						autosave_allowed = true
-						var sc = -200             
-	                    points_add(sc,true)
-						create_score_text(my_bomb.x,my_bomb.y,sc,true,0xFFFFFF)
+						var sc = 200             
+	                    points_add_nocombo(-sc)
+						create_score_text(my_bomb.x,my_bomb.y,-sc,true,0xFFFFFF)
 						instance_destroy(my_bomb)
 					}
 				}
@@ -61,9 +61,9 @@ if bombis0 && !levelbarfull
 						controlallowed = true
 						spawnallowed = true
 						autosave_allowed = true
-						var sc = -400             
-	                    points_add(sc,true)
-						create_score_text(my_bomb.x,my_bomb.y,sc,true,0xFFFFFF)
+						var sc = 400             
+	                    points_add_nocombo(-sc)
+						create_score_text(my_bomb.x,my_bomb.y,-sc,true,0xFFFFFF)
 						instance_destroy(my_bomb)
 					}
 				}
